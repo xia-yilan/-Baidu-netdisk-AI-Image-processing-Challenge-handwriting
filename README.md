@@ -7,5 +7,5 @@
 
 ## 二、数据处理
 官方提供训练集1081对，A榜测试集200张，B榜测试集200张。训练需要的黑白mask需要自己生成，具体操作是由训练集的images和gt图像做差，并设置差异的阙值，见代码gen_mask.py
-![](https://aistudio.baidu.com/aistudio/projectdetail/3279736)
 
+![](https://ai-studio-static-online.cdn.bcebos.com/cd3e3041e72843f9b702c3c2314067d6fdb0fec237654086be1f3ca79f031b14)
