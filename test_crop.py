@@ -111,7 +111,11 @@ def crop_forward_1024(x, model):
     outputlist = []
     mmlist = []
     range_y = np.arange(0, h-mul, mul) #[0,1024,...,]
+#     if len(range_y)==0:
+#         range_y = [0]
     range_x = np.arange(0, w-mul, mul)
+#     if len(range_x)==0:
+#         range_x = [0]
     if range_y[-1] != h - mul:
         range_y = np.append(range_y, h-mul)
     if range_x[-1] != w - mul:
