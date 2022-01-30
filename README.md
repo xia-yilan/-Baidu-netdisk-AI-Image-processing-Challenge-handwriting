@@ -29,8 +29,35 @@
 
 ## 五、代码运行
 1、下载数据集。获取地址：![](https://aistudio.baidu.com/aistudio/competition/detail/129/0/datasets)
+
 2、生成训练黑白mask
-、、、
+```
 python gen_mask.py
-、、、
-3、
+```
+数据集目录如下所示：
+```
+| dehw_testA_dataset/
+        -images
+| dehw_train_dataset/
+        -gts
+        -images
+        -mask
+```
+
+3、运行训练代码
+```
+python train_parallel.py
+```
+
+4、运行测试代码
+```
+python test_crop.py
+```
+## 六、致谢及参考文献
+感谢百度组织大赛，给选手们提供机会和参赛平台。
+
+本次参赛的模型代码主要参考官方提供的baseline:[https://aistudio.baidu.com/aistudio/projectdetail/3257671](http://)
+
+框架插图来源于论文**EraseNet: End-to-End Text Removal in the Wild**
+
+
