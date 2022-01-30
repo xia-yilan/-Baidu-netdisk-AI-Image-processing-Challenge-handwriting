@@ -50,6 +50,7 @@ python train_parallel.py
 ```
 
 4、运行测试代码
+下载预训练模型:链接：https://pan.baidu.com/s/1_ytGCIAlpWfDnpG2paGPuw   提取码：baid
 ```
 python test_crop.py
 ```
